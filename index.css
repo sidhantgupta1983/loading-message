@@ -1,0 +1,28 @@
+body{
+    padding: 15% 20% 0% 45%;
+}
+.scanner h1{
+    color : #252839;
+    font-size: 28px;
+    position: absolute;
+}
+.scanner h1:before{
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid magenta;
+    overflow: hidden;
+    color : magenta;
+    animation: load 4s linear infinite;
+}
+@keyframes load{
+    0%, 10%, 100%{
+        width : 0;
+    }
+    60%, 80%{
+        width : 100%;
+    }
+}
